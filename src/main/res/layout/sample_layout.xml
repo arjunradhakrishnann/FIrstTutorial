@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout xmlns:card_view="http://schemas.android.com/apk/res-auto" android:descendantFocusability="blocksDescendants" android:id="@+id/rel" android:layout_marginTop="3dp" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView android:layout_height="70dp" android:layout_width="match_parent"/>
+
+
+    <LinearLayout android:id="@+id/image" android:layout_height="70dp" android:layout_width="70dp">
+
+    <android.support.v4.widget.CircleImageView android:id="@+id/user_image" android:layout_height="match_parent" android:layout_width="match_parent"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:id="@+id/usercredentials" android:layout_height="30dp" android:layout_width="match_parent" android:orientation="horizontal" android:layout_toRightOf="@id/image">
+
+    <TextView android:id="@+id/fname" android:layout_height="match_parent" android:layout_width="150dp" android:layout_marginLeft="7dp"/>
+
+    <TextView android:id="@+id/lname" android:layout_height="match_parent" android:layout_width="150dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout android:layout_marginTop="7dp" android:layout_height="30dp" android:layout_width="match_parent" android:layout_toRightOf="@id/image" android:layout_below="@id/usercredentials">
+
+    <TextView android:id="@+id/phone" android:layout_height="match_parent" android:layout_width="150dp" android:layout_marginLeft="7dp"/>
+
+    <TextView android:id="@+id/email" android:layout_height="match_parent" android:layout_width="150dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>
